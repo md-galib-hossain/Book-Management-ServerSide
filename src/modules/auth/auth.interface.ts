@@ -1,7 +1,7 @@
 import { Types } from "mongoose";
 
 export type TLoginUser = {
-  username: string;
+  email: string;
   password: string;
 };
 export type TjwtPayload = {

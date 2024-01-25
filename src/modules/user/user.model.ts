@@ -1,6 +1,7 @@
 import { Schema, model } from "mongoose";
 import { TUser, TUserModel } from "./user.interface";
 import bcrypt from "bcrypt";
+import config from "../../config";
 
 const UserSchema = new Schema(
   {
@@ -38,19 +39,19 @@ const UserSchema = new Schema(
 );
 
 UserSchema.pre('find', function (next){
-    this.find({isDeleted : { $ne : true}}).select('+password')
+    this.find({isDeleted : { $ne : true}})
     next()
 })
 //pre save middleware
 UserSchema.pre("save",async function (next) {
     //hashing password and save to db
     const user = this;
-    user.password = await bcrypt.hash(user.password, 8);
+    user.password = await bcrypt.hash(user.password, config.BCRYPT_SALT_ROUNDS);
     next()
   });
 
 UserSchema.statics.isUserexists = async function (email: string) {
-    const existingUser = await UserModel.findOne({email : email})
+    const existingUser = await UserModel.findOne({email : email}).select("+password")
     return existingUser
 }
 
