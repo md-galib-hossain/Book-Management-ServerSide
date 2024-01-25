@@ -4,7 +4,7 @@ import jwt, { JwtPayload } from "jsonwebtoken";
 import AppError from "../../errors/AppError";
 import { TLoginUser } from "./auth.interface";
 import { UserModel } from "../user/user.model";
-import { createToken } from "./auth.utils";
+import { createToken, verifyToken } from "./auth.utils";
 import config from "../../config";
 
 const loginUser = async (payload: TLoginUser) => {
@@ -49,10 +49,44 @@ const loginUser = async (payload: TLoginUser) => {
   };
 };
 
-
+//change password
+const changePassword = async (
+    payload: { currentPassword: string; newPassword: string },  token :string) => {
+      const decoded = verifyToken(token, config.JWT_ACCESS_SECRET);
+      const {email} = decoded
+      // checking if the user is exist
+      const user = await UserModel.isUserexists(email);
+  
+    if (!user) {
+      throw new AppError(httpStatus.NOT_FOUND, 'This user is not found !');
+    }
+  
+    //checking if the password is correct
+  
+    if (!(await UserModel.isPasswordMatched(payload.currentPassword, user?.password)))
+      throw new AppError(httpStatus.FORBIDDEN, 'Password do not matched');
+  
+    //hash new password
+    const newHashedPassword = await bcrypt.hash(
+      payload.newPassword,
+      Number(config.BCRYPT_SALT_ROUNDS),
+    );
+  
+    const result = await UserModel.findOneAndUpdate(
+      {
+        email: user?.email,
+      },
+      {
+        password: newHashedPassword,
+        passwordChangedAt: new Date(),
+      },
+    );
+  
+    return result;
+  };
 
 
 export const AuthServices = {
   loginUser,
-   
+   changePassword
 };
