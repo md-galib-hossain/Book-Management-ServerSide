@@ -17,4 +17,21 @@ const createProductValidation = z.object({
         isDeleted: z.boolean().optional(),
     })
 })
-export const productValidations = {createProductValidation}
+const updateProductValidation = z.object({
+    body:z.object({
+        productName: z.string().optional(),
+        productSimpleId : z.string().optional(),
+        productPrice: z.number().optional(),
+        productQuantity: z.number().optional(),
+        releaseDate: z.string().optional(),
+        author: z.string().optional(),
+        isbn: z.number().optional(),
+        genre: z.string().optional(),
+        publisher: z.string().optional(),
+        series: z.string().optional(),
+        language: z.array(z.string()).optional(),
+        bookFormat: z.array(z.string()).optional(),
+        isDeleted: z.boolean().optional(),
+    })
+})
+export const productValidations = {createProductValidation,updateProductValidation}

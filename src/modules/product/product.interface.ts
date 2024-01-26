@@ -18,6 +18,8 @@ export type TProduct = {
 }
 
 export interface TProductModel extends Model<TProduct>{
-    isProductexists(productSimpleId:string) : Promise<TProduct> | null
+    isProductexistswithsimpleid(productSimpleId:string) : Promise<TProduct> | null
+    isProductexist(id:string) : Promise<TProduct> | null
+    isProductdeleted(id:string) : Promise<TProduct> | null
     
 }

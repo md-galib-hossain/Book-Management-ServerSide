@@ -65,10 +65,34 @@ const ProductSchema = new Schema(
   }
 );
 
-ProductSchema.statics.isProductexists = async function (productSimpleId: string) {
-  const existingProduct = await ProductModel.findOne({productSimpleId : productSimpleId})
-  return existingProduct
-}
+ProductSchema.pre("find", function (next) {
+  this.find({ isDeleted: { $ne: true } });
+  next();
+});
+
+//check with simpleId
+ProductSchema.statics.isProductexistswithsimpleid = async function (
+  productSimpleId: string
+) {
+  const existingProduct = await ProductModel.findOne({
+    productSimpleId: productSimpleId,
+  });
+  return existingProduct;
+};
+
+//check with objectId
+ProductSchema.statics.isProductexist = async function (id: string) {
+  const existingProduct = await ProductModel.findOne({ _id: id });
+  return existingProduct;
+};
+
+ProductSchema.statics.isProductdeleted = async function (id: string) {
+  const alreadyDeleted = await ProductModel.findOne({
+    _id: id,
+    isDeleted: true,
+  });
+  return alreadyDeleted;
+};
 
 export const ProductModel = model<TProduct, TProductModel>(
   "product",

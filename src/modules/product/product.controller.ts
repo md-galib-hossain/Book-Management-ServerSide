@@ -41,4 +41,43 @@ data : result
         });
       });
 
-export const ProductController = {CreateProduct,getAllProducts,getSingleProduct}
+      //delete product
+      const deleteProduct = catchAsync(async (req, res) => {
+        const { id } = req.params;
+        const result = await ProductService.deleteProductFromDB(id);
+      
+        sendResponse(res, {
+          statusCode: httpStatus.OK,
+          success: true,
+          message: 'Product is deleted succesfully',
+          data: result,
+        });
+      });
+      //delete multiple products
+      const deleteProducts = catchAsync(async (req, res) => {
+        const {ids} = req.body
+        console.log(ids)
+        const result = await ProductService.deleteProductsFromDB(ids);
+      
+        sendResponse(res, {
+          statusCode: httpStatus.OK,
+          success: true,
+          message: 'Products are deleted succesfully',
+          data: result,
+        });
+      });
+
+      //update product
+      const updateProduct = catchAsync(async (req, res) => {
+        const { id } = req.params;
+        const result = await ProductService.updateProductIntoDB(id, req.body);
+      
+        sendResponse(res, {
+          statusCode: httpStatus.OK,
+          success: true,
+          message: 'Product is updated succesfully',
+          data: result,
+        });
+      });
+
+export const ProductController = {CreateProduct,getAllProducts,getSingleProduct,deleteProduct,deleteProducts,updateProduct}
