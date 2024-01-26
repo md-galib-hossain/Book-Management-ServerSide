@@ -28,4 +28,17 @@ data : result
         });
       });
 
-export const ProductController = {CreateProduct,getAllProducts}
+      //get single product
+      const getSingleProduct = catchAsync(async (req, res) => {
+        const { id } = req.params;
+        const result = await ProductService.getSingleProductFromDB(id);
+      
+        sendResponse(res, {
+          statusCode: httpStatus.OK,
+          success: true,
+          message: 'Product is retrieved succesfully',
+          data: result,
+        });
+      });
+
+export const ProductController = {CreateProduct,getAllProducts,getSingleProduct}
