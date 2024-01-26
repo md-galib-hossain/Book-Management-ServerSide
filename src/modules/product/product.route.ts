@@ -6,7 +6,7 @@ import { ProductController } from './product.controller'
 const router = express.Router()
 
 router.post('/create-product',validateRequest(productValidations.createProductValidation),ProductController.CreateProduct)
-router.get('/create-user',)
+router.get('/', ProductController.getAllProducts);
 
 
 export const ProductRoutes = router 
