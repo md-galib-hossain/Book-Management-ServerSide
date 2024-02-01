@@ -35,7 +35,7 @@ const getAllProductsFromDB = async (query: Record<string, unknown>) => {
 
 //get single product
 const getSingleProductFromDB = async (id: string) => {
-  const result = await ProductModel.findById(id); //_id
+  const result = await ProductModel.findOne({productSimpleId: id}); //product simple id
   return result;
 };
 

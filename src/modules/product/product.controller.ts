@@ -55,7 +55,7 @@ data : result
       });
       //delete multiple products
       const deleteProducts = catchAsync(async (req, res) => {
-        const {ids} = req.body
+        const ids = req.body
         console.log(ids)
         const result = await ProductService.deleteProductsFromDB(ids);
       

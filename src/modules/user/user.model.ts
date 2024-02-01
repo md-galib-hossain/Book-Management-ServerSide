@@ -46,7 +46,7 @@ UserSchema.pre('find', function (next){
 UserSchema.pre("save",async function (next) {
     //hashing password and save to db
     const user = this;
-    user.password = await bcrypt.hash(user.password, config.BCRYPT_SALT_ROUNDS);
+    user.password = await bcrypt.hash(user.password, Number(config.BCRYPT_SALT_ROUNDS));
     next()
   });
 
@@ -61,6 +61,15 @@ UserSchema.statics.isPasswordMatched = async function (
     hashedPassword : string,
   ) {
     return await bcrypt.compare(plainTextPassword, hashedPassword);
+  };
+
+  UserSchema.statics.isJWTIssuedBeforePasswordChanged = function (
+    passwordChangedTimestamp: Date,
+    jwtIssuedTimestamp: number,
+  ) {
+    const passwordChangedTime =
+      new Date(passwordChangedTimestamp).getTime() / 1000;
+    return passwordChangedTime > jwtIssuedTimestamp;
   };
   
 

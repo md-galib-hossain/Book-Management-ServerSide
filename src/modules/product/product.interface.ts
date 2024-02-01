@@ -5,7 +5,7 @@ export type TProduct = {
     productSimpleId : string;
     productPrice : number;
     productQuantity : number;
-    releaseDate : Date;
+    releaseDate : string;
     author : string;
     isbn : number;
     genre : string;

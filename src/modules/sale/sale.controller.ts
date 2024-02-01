@@ -15,5 +15,16 @@ message: "Sale order created Successfully",
 data : result
 })    
     })
+const getAllSaleHistory = catchAsync(async(req,res)=>{
+    const result = await SaleService.getAllSaleHistoryFromDb()
+    sendResponse(res,{
+        statusCode : httpStatus.OK,
+        success: true,
+        message: "Sale order history retrieved Successfully",
+        data : result
+        })  
+})
 
-export const SaleController = {CreateSale}
+
+
+export const SaleController = {CreateSale,getAllSaleHistory}

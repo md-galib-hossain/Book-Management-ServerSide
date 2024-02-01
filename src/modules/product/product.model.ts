@@ -20,7 +20,7 @@ const ProductSchema = new Schema(
       required: true,
     },
     releaseDate: {
-      type: Date,
+      type: String,
       required: true,
     },
     author: {

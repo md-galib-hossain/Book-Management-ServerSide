@@ -28,8 +28,13 @@ let result
   return result;
 };
 
+const getAllSaleHistoryFromDb =async ()=>{
+
+const result = await SaleModel.find().populate("productId")
+return result
+}
 
 
 export const SaleService = {
-  createSaleIntoDb
+  createSaleIntoDb,getAllSaleHistoryFromDb
 };

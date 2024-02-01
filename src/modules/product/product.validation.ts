@@ -19,6 +19,7 @@ const createProductValidation = z.object({
 })
 const updateProductValidation = z.object({
     body:z.object({
+        _id: z.string().optional(),
         productName: z.string().optional(),
         productSimpleId : z.string().optional(),
         productPrice: z.number().optional(),
