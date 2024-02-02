@@ -34,8 +34,8 @@ const loginUser = async (payload: TLoginUser) => {
 
   const accessToken = createToken(
     jwtPayload,
-    config.JWT_ACCESS_SECRET,
-    config.JWT_ACCESS_EXPIRES_IN
+    config.JWT_ACCESS_SECRET as string,
+    config.JWT_ACCESS_EXPIRES_IN as string
   );
 
   // excluding the password from result
@@ -52,7 +52,7 @@ const loginUser = async (payload: TLoginUser) => {
 //change password
 const changePassword = async (
     payload: { currentPassword: string; newPassword: string },  token :string) => {
-      const decoded = verifyToken(token, config.JWT_ACCESS_SECRET);
+      const decoded = verifyToken(token, config.JWT_ACCESS_SECRET as string);
       const {email} = decoded
       // checking if the user is exist
       const user = await UserModel.isUserexists(email);

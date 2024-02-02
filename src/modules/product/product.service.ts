@@ -71,7 +71,7 @@ const updateProductIntoDB = async (id: string, payload: Partial<TProduct>) => {
   const { language, bookFormat, ...productRemainingData } = payload;
 
   try {
-    //step1: basic product info update
+    
     const updatedBasicProductInfo = await ProductModel.findByIdAndUpdate(
       id,
       productRemainingData,
@@ -90,7 +90,7 @@ const updateProductIntoDB = async (id: string, payload: Partial<TProduct>) => {
       const newLanguage = await ProductModel.findByIdAndUpdate(
         id,
         {
-          $addToSet: { language: { $each: language } },
+          $set: { language:  language  },
         },
         {
           new: true,
@@ -108,7 +108,7 @@ const updateProductIntoDB = async (id: string, payload: Partial<TProduct>) => {
         const newBookFormat = await ProductModel.findByIdAndUpdate(
           id,
           {
-            $addToSet: { bookFormat: { $each: bookFormat } },
+            $set: {bookFormat:bookFormat },
           },
           {
             new: true,
