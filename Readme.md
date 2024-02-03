@@ -20,3 +20,7 @@ JWT_REFRESH_EXPIRES_IN=365d
 
 # LiveSite : https://book-management-galib.netlify.app
 # Server   : https://book-management-server-seven.vercel.app
+
+# ClientSide code : https://github.com/Porgramming-Hero-web-course/l2b2-full-stack-a5-client-side-md-galib-hossain
+
+# ServerSide code : https://github.com/Porgramming-Hero-web-course/l2b2-full-stack-a5-server-side-md-galib-hossain
