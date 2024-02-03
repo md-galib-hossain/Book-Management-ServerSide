@@ -1,0 +1,544 @@
+[{
+  "_id": {
+    "$oid": "65b33601ad2d9bc0258430f5"
+  },
+  "productName": "The Enigma of the Sphinx",
+  "productPrice": 19.99,
+  "productSimpleId": "ENIGMA123",
+  "productQuantity": 50,
+  "releaseDate": "2024-01-30",
+  "author": "A. R. Mystery",
+  "isbn": {
+    "$numberLong": "9781234567890"
+  },
+  "genre": "Mystery",
+  "publisher": "Cryptic Press",
+  "series": "Sphinx Series",
+  "language": [
+    "English"
+  ],
+  "bookFormat": [
+    "Hardcover",
+    "Ebook"
+  ],
+  "isDeleted": false,
+  "createdAt": {
+    "$date": "2024-01-26T04:33:05.314Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-29T17:46:51.147Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b33678e61dfb14610d3a18"
+  },
+  "productName": "Beyond the Starss",
+  "productPrice": 24.99,
+  "productSimpleId": "STARS456",
+  "productQuantity": 30,
+  "releaseDate": "2023-03-20",
+  "author": "S. Galaxy",
+  "isbn": {
+    "$numberLong": "9789876543210"
+  },
+  "genre": "Science Fiction",
+  "publisher": "Cosmic Publications",
+  "series": "Galactic Odyssey",
+  "language": [
+    "English"
+  ],
+  "bookFormat": [
+    "Paperback",
+    "Ebook",
+    "pppp"
+  ],
+  "isDeleted": false,
+  "createdAt": {
+    "$date": "2024-01-26T04:35:04.594Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-29T17:46:51.147Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b7ad234f4ca687f486ad5e"
+  },
+  "productName": "Whispers in the Wind",
+  "productPrice": 14.95,
+  "productSimpleId": "WIND789",
+  "productQuantity": 40,
+  "releaseDate": "2022-02-20",
+  "author": "M. Breeze",
+  "isbn": {
+    "$numberLong": "9780123456789"
+  },
+  "genre": "Fantasy",
+  "publisher": "Enchanting Books",
+  "series": "Windwalker Chronicles",
+  "language": [
+    "English"
+  ],
+  "bookFormat": [
+    "Hardcover",
+    "Audio Book"
+  ],
+  "isDeleted": false,
+  "createdAt": {
+    "$date": "2024-01-29T13:50:27.772Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-29T13:50:27.772Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b7ad2f4f4ca687f486ad61"
+  },
+  "productName": "Echoes of History",
+  "productPrice": 29.99,
+  "productSimpleId": "HISTORY123",
+  "productQuantity": 25,
+  "releaseDate": "2022-06-10",
+  "author": "H. Historian",
+  "isbn": {
+    "$numberLong": "9785678901234"
+  },
+  "genre": "Historical Fiction",
+  "publisher": "Timeless Press",
+  "series": "Chronicles of the Past",
+  "language": [
+    "English"
+  ],
+  "bookFormat": [
+    "Hardcover",
+    "Ebook"
+  ],
+  "isDeleted": false,
+  "createdAt": {
+    "$date": "2024-01-29T13:50:39.689Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-29T17:46:51.147Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b7ad4d4f4ca687f486ad64"
+  },
+  "productName": "The Code Breaker",
+  "productPrice": 34.99,
+  "productSimpleId": "CODE123",
+  "productQuantity": 10,
+  "releaseDate": "2023-08-11",
+  "author": "A. Cryptographer",
+  "isbn": {
+    "$numberLong": "9785432109876"
+  },
+  "genre": "Thriller",
+  "publisher": "Cryptic Thrillers",
+  "series": "Cipher Chronicles",
+  "language": [
+    "English,Bangla,Hindi"
+  ],
+  "bookFormat": [
+    "Paperback",
+    "Ebook"
+  ],
+  "isDeleted": false,
+  "createdAt": {
+    "$date": "2024-01-29T13:51:09.617Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-03T04:51:48.181Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b7ad5e4f4ca687f486ad67"
+  },
+  "productName": "City of Shadows",
+  "productPrice": 22.5,
+  "productSimpleId": "SHADOW789",
+  "productQuantity": 32,
+  "releaseDate": "2023-03-20",
+  "author": "N. Noir",
+  "isbn": {
+    "$numberLong": "9780987654321"
+  },
+  "genre": "Crime Fiction",
+  "publisher": "Dark Alley Books",
+  "series": "Shadowy Investigations",
+  "language": [
+    "English"
+  ],
+  "bookFormat": [
+    "Hardcover",
+    "Audio Book"
+  ],
+  "isDeleted": true,
+  "createdAt": {
+    "$date": "2024-01-29T13:51:26.482Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-03T04:51:26.012Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b7ad664f4ca687f486ad6a"
+  },
+  "productName": "City in Translationsss",
+  "productPrice": 163,
+  "productSimpleId": "LOST456",
+  "productQuantity": 14,
+  "releaseDate": "2023-03-20",
+  "author": "L. Linguist",
+  "isbn": 234234534,
+  "genre": "Contemporary Fiction",
+  "publisher": "Global Novels",
+  "series": "Cultural Connections",
+  "language": [
+    "English",
+    "Spanish"
+  ],
+  "bookFormat": [
+    "Paperback",
+    "Ebook",
+    "GGG"
+  ],
+  "isDeleted": true,
+  "createdAt": {
+    "$date": "2024-01-29T13:51:34.808Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-01T06:46:12.636Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b8fc9c6325d376541f7d0d"
+  },
+  "productName": "Journey through Echoes",
+  "productPrice": 55,
+  "productSimpleId": "EXPLORE789",
+  "productQuantity": 13,
+  "releaseDate": "2023-09-20",
+  "author": "A. Adventurer",
+  "isbn": 234234534,
+  "genre": "Adventure",
+  "publisher": "Global Explorations",
+  "series": "World Wanderings",
+  "language": [
+    "English",
+    "French"
+  ],
+  "bookFormat": [
+    "Hardcover",
+    "Audiobook"
+  ],
+  "isDeleted": true,
+  "createdAt": {
+    "$date": "2024-01-30T13:41:48.978Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-03T04:51:26.012Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ba09579ce5367d5b3259ca"
+  },
+  "productName": "Journey through Echo",
+  "productPrice": 24.99,
+  "productSimpleId": "EXPLORE7890",
+  "productQuantity": 24,
+  "releaseDate": "2024-01-29T00:00:00.000Z",
+  "author": "A. Adventurers",
+  "isbn": {
+    "$numberLong": "97855443322117"
+  },
+  "genre": "Adventures",
+  "publisher": "Global Explorations",
+  "series": "World Wanderings",
+  "language": [
+    "English",
+    "French"
+  ],
+  "bookFormat": [
+    "Hardcover",
+    "Audiobook"
+  ],
+  "isDeleted": true,
+  "createdAt": {
+    "$date": "2024-01-31T08:48:23.741Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-03T04:51:16.105Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ba0ef49ce5367d5b3259df"
+  },
+  "productName": "Journey through Galib",
+  "productPrice": 24.99,
+  "productSimpleId": "sdf54",
+  "productQuantity": 19,
+  "releaseDate": "2024-01-29T00:00:00.000Z",
+  "author": "A. Adventurer",
+  "isbn": {
+    "$numberLong": "97855443322117"
+  },
+  "genre": "Adventure",
+  "publisher": "Global Explorations",
+  "series": "World Wanderings",
+  "language": [
+    "English",
+    "French"
+  ],
+  "bookFormat": [
+    "Hardcover",
+    "Audiobook"
+  ],
+  "isDeleted": false,
+  "createdBy": {
+    "$oid": "65b619e127e59af894efa5b7"
+  },
+  "createdAt": {
+    "$date": "2024-01-31T09:12:20.204Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-02T05:22:29.484Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ba43af9ce5367d5b325a48"
+  },
+  "productName": "Lost in Translationss",
+  "productPrice": 20,
+  "productSimpleId": "45342345",
+  "productQuantity": 11,
+  "releaseDate": "2024-1-3",
+  "author": "asdff",
+  "isbn": {
+    "$numberLong": "2345453456657"
+  },
+  "genre": "sdfsdf",
+  "publisher": "Dark Alley Booksg",
+  "series": "sdf",
+  "language": [
+    "English",
+    "Frenchd",
+    "English",
+    "Frenchd"
+  ],
+  "bookFormat": [
+    "Paperback",
+    "Ebook",
+    "GGG",
+    "Paperback",
+    "Ebook",
+    "GGG"
+  ],
+  "isDeleted": false,
+  "createdBy": {
+    "$oid": "65b619e127e59af894efa5b7"
+  },
+  "createdAt": {
+    "$date": "2024-01-31T12:57:19.933Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-01T06:53:41.580Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ba45b451ab8eb2d8306892"
+  },
+  "productName": "Lost in Translationss",
+  "productPrice": 20,
+  "productSimpleId": "12erte3234",
+  "productQuantity": 12,
+  "releaseDate": "2024-1-3",
+  "author": "asdff",
+  "isbn": {
+    "$numberLong": "234234534767"
+  },
+  "genre": "sdfsdf",
+  "publisher": "Dark Alley Booksg",
+  "series": "sdf",
+  "language": [
+    "English",
+    "Frenchd",
+    "English",
+    "Frenchd"
+  ],
+  "bookFormat": [
+    "Paperback",
+    "Ebook",
+    "GGG",
+    "Paperback",
+    "Ebook",
+    "GGG"
+  ],
+  "isDeleted": false,
+  "createdAt": {
+    "$date": "2024-01-31T13:05:56.086Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-02T06:13:17.376Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65bc7ddf8b0c9ac1fd3c63da"
+  },
+  "productName": "The Enigma of the BDs",
+  "productPrice": 19.99,
+  "productSimpleId": "45342345456",
+  "productQuantity": 49,
+  "releaseDate": "2024-01-30",
+  "author": "A. R. Mystery",
+  "isbn": {
+    "$numberLong": "9781234567890"
+  },
+  "genre": "Mystery",
+  "publisher": "Cryptic Press",
+  "series": "Sphinx Series",
+  "language": {
+    "$each": [
+      "English",
+      "Bangla"
+    ]
+  },
+  "bookFormat": [
+    "Hardcover"
+  ],
+  "isDeleted": false,
+  "createdBy": {
+    "$oid": "65b619e127e59af894efa5b7"
+  },
+  "createdAt": {
+    "$date": "2024-02-02T05:30:07.900Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-02T10:44:12.895Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65bc8b378b0c9ac1fd3c6409"
+  },
+  "productName": "The Enigma of the Fp",
+  "productPrice": 19.99,
+  "productSimpleId": "12erte3234er6",
+  "productQuantity": 48,
+  "releaseDate": "2024-01-30",
+  "author": "A. R. Mystery",
+  "isbn": 457688233,
+  "genre": "Mystery",
+  "publisher": "Cryptic Press",
+  "series": "Sphinx Series",
+  "language": [
+    "English,bangla,hindi"
+  ],
+  "bookFormat": [
+    "Hardcover"
+  ],
+  "isDeleted": false,
+  "createdBy": {
+    "$oid": "65b619e127e59af894efa5b7"
+  },
+  "createdAt": {
+    "$date": "2024-02-02T06:27:03.664Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-02T17:47:03.729Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65bcfcf73801c4139fd6de34"
+  },
+  "productName": "The Enigma of the sss",
+  "productPrice": 19.99,
+  "productSimpleId": "45342345567",
+  "productQuantity": 47,
+  "releaseDate": "2024-01-30",
+  "author": "A. R. Mystery",
+  "isbn": {
+    "$numberLong": "457688233234"
+  },
+  "genre": "Mystery",
+  "publisher": "Cryptic Press",
+  "series": "Sphinx Series",
+  "language": [
+    "English,Spanish,Hindi"
+  ],
+  "bookFormat": [
+    "Hardcover,Ebook,asd"
+  ],
+  "isDeleted": false,
+  "createdBy": {
+    "$oid": "65b619e127e59af894efa5b7"
+  },
+  "createdAt": {
+    "$date": "2024-02-02T14:32:23.335Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-03T04:15:48.091Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65bdc686f30efda5cb288e66"
+  },
+  "productName": "The Code Breaker two",
+  "productPrice": 34.99,
+  "productSimpleId": "abs723",
+  "productQuantity": 0,
+  "releaseDate": "2023-08-11",
+  "author": "A. Cryptographer",
+  "isbn": {
+    "$numberLong": "9785433452109876"
+  },
+  "genre": "Thriller",
+  "publisher": "Cryptic Thrillers",
+  "series": "Cipher Chronicles",
+  "language": [
+    "English,Bangla,Hindi"
+  ],
+  "bookFormat": [
+    "Paperback",
+    "Ebook"
+  ],
+  "isDeleted": true,
+  "createdBy": {
+    "$oid": "65b619e127e59af894efa5b7"
+  },
+  "createdAt": {
+    "$date": "2024-02-03T04:52:22.539Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-03T04:53:41.719Z"
+  },
+  "__v": 0
+}]

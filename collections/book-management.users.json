@@ -1,0 +1,94 @@
+[{
+  "_id": {
+    "$oid": "65b264d95c1f19a3a2c7add0"
+  },
+  "username": "galib",
+  "email": "galib@example.com",
+  "password": "123456",
+  "role": "user",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": "2024-01-25T13:40:41.390Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-25T13:40:41.390Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b2831fb83948baca00ba3f"
+  },
+  "username": "galibdf",
+  "email": "galsb1@example.com",
+  "password": "$2b$08$gSgAL4L2auWUUTf60Fcxce/XTCOpunKxhqATYsrSxlGTO4tBExtgm",
+  "role": "user",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": "2024-01-25T15:49:51.871Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-25T15:49:51.871Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b2878868d51a25db3f72d4"
+  },
+  "username": "test",
+  "email": "test@email.com",
+  "password": "$2b$08$tQHBZhT1JAbcnUi0z5x16u1Z1KE2yW29Gx4Y02LRW.D7F2FMuwcxu",
+  "role": "user",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": "2024-01-25T16:08:40.214Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-25T16:55:59.699Z"
+  },
+  "__v": 0,
+  "passwordChangedAt": {
+    "$date": "2024-01-25T16:55:59.698Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b6188e27e59af894efa5af"
+  },
+  "username": "test1",
+  "email": "test1@email.com",
+  "password": "$2b$08$pqxF7Zf0vG1Afzrrf0oaz.YV5hNTowgwjt.gBEgAVAdYYV5g72NOa",
+  "role": "user",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": "2024-01-28T09:04:14.617Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-28T09:30:54.170Z"
+  },
+  "__v": 0,
+  "passwordChangedAt": {
+    "$date": "2024-01-28T09:30:54.169Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b619e127e59af894efa5b7"
+  },
+  "username": "test2",
+  "email": "test2@email.com",
+  "password": "$2b$08$k6iuKp.4XHS8NRKpvsrETe4cCsLw3m.T3Z8nw4mJjzNo5fBs2EIu.",
+  "role": "user",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": "2024-01-28T09:09:53.538Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-03T04:54:55.835Z"
+  },
+  "__v": 0,
+  "passwordChangedAt": {
+    "$date": "2024-02-03T04:54:55.834Z"
+  }
+}]

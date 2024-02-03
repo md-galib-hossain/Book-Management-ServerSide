@@ -18,6 +18,8 @@ JWT_REFRESH_EXPIRES_IN=365d
       npm run start:dev
 4th.  You are ready to go to test it localy
 
+# There is a collection folder in root directory that contains a dummy dataset for the project
+
 # LiveSite : https://book-management-galib.netlify.app
 # Server   : https://book-management-server-seven.vercel.app
 

@@ -1,0 +1,126 @@
+[{
+  "_id": {
+    "$oid": "65bb3fe71715c5c500cbcd16"
+  },
+  "productId": {
+    "$oid": "65ba45b451ab8eb2d8306892"
+  },
+  "saleQuantity": 1,
+  "saleDate": "2024-02-01T06:53:25.487Z",
+  "buyerName": "Galib",
+  "createdAt": {
+    "$date": "2024-02-01T06:53:27.331Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-01T06:53:27.331Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65bb3ff51715c5c500cbcd1e"
+  },
+  "productId": {
+    "$oid": "65ba43af9ce5367d5b325a48"
+  },
+  "saleQuantity": 1,
+  "saleDate": "2024-01-23T06:53:36.297Z",
+  "buyerName": "Galib",
+  "createdAt": {
+    "$date": "2024-02-01T06:53:41.517Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-01T06:53:41.517Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65bb40021715c5c500cbcd26"
+  },
+  "productId": {
+    "$oid": "65ba0ef49ce5367d5b3259df"
+  },
+  "saleQuantity": 1,
+  "saleDate": "2024-01-03T06:53:47.792Z",
+  "buyerName": "xdbdfb",
+  "createdAt": {
+    "$date": "2024-02-01T06:53:54.726Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-01T06:53:54.726Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65bccc0f66eb0d4545917d64"
+  },
+  "productId": {
+    "$oid": "65bc8b378b0c9ac1fd3c6409"
+  },
+  "saleQuantity": 1,
+  "saleDate": "2024-02-02T11:03:40.707Z",
+  "buyerName": "Galib",
+  "createdAt": {
+    "$date": "2024-02-02T11:03:43.794Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-02T11:03:43.794Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65bdbdf37b66e27676420162"
+  },
+  "productId": {
+    "$oid": "65bcfcf73801c4139fd6de34"
+  },
+  "saleQuantity": 1,
+  "saleDate": "2024-02-07T04:15:43.727Z",
+  "buyerName": "xdbdfb",
+  "createdAt": {
+    "$date": "2024-02-03T04:15:47.885Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-03T04:15:47.885Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65bdc6c7f30efda5cb288e7c"
+  },
+  "productId": {
+    "$oid": "65bdc686f30efda5cb288e66"
+  },
+  "saleQuantity": 1,
+  "saleDate": "2024-02-03T04:53:23.774Z",
+  "buyerName": "Galib",
+  "createdAt": {
+    "$date": "2024-02-03T04:53:27.941Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-03T04:53:27.941Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65bdc6d5f30efda5cb288e84"
+  },
+  "productId": {
+    "$oid": "65bdc686f30efda5cb288e66"
+  },
+  "saleQuantity": 9,
+  "saleDate": "2024-02-03T04:53:23.774Z",
+  "buyerName": "Galib",
+  "createdAt": {
+    "$date": "2024-02-03T04:53:41.525Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-03T04:53:41.525Z"
+  },
+  "__v": 0
+}]
